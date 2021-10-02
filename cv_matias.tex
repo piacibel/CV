@@ -1,0 +1,131 @@
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.86]{geometry}
+\usepackage{enumerate}
+
+\firstname{Matias}
+\familyname{Hastaran}
+%\title{Développeur}
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\address{12 rue d'alembert}{33000 Bordeaux}
+\mobile{06 48 05 41 45}
+\email{hastaran.matias@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Expériences}
+\cventry{Octobre 2013 \\ Aujourd'hui}{Ingénieur d'étude}{INRIA}{Bordeaux}{Participation au projet EZTrace}{Environnement technique : C, ASM, MPI, OpenMP, Linux, git}
+\cventry{Janvier 2013 \\ Octobre 2013}{Ingénieur d'étude}{ISEO}{Bidart}{Développement de nouveaux modules sur le logiciel existant}{Environnement technique : C, C++, Oracle, Linux, Windows, Visual SourceSafe}
+\cventry{Janvier 2012 \\ Août 2012}{Stagiaire R\&D}{OpenWide Ingenierie}{Paris}{Participation au projet de R\&D PARSEC}{Environnement technique : C, Assembleur x86, Linux}
+\cventry{Août 2011 \\ Décembre 2011}{Développeur C++}{APSIDE : Mission chez Generals Electrics}{Buc}{Mise à jour d'une application de mammographie pour support de la 3D}{Environnement technique : C++, ClearCase, Solaris}
+\cventry{Octobre 2010 \\ Août 2011}{Développeur R\&D}{Ensuite-Info}{Chilly-Mazarin}{Développement de démonstrateurs pour des processeurs d'analyse situationnelle}{Environnement technique : Linux, C++, Git}
+\cventry{Janvier 2009 \\ Avril 2009}{Administrateur réseau}{Service Départemental d’Incendie et de Secours des Pyrénées-Atlantiques}{Pau}{Audit du réseau. Mise en place de solutions de sauvegarde}{Environnement technique : Linux, Cisco, Bash}
+\cventry{Mai 2008 \\  Août 2008}{Stagiaire}{Service Départemental d’Incendie et de Secours des Pyrénées-Atlantiques}{Pau}{Mise en place de solutions de supervision : NAGIOS, CACTI}{Environnement technique : Linux, Cisco, PHP, C, Bash}
+%\cventry{Octobre 2007 \\ Janvier 2008}{Stagiaire}{Agence Départementale du Numérique 64}{Pau}{Développement d'une application de gestion de frais}{Environnement technique : Linux, PHP, MySQL, HTML}
+
+\section{Diplômes et Études}
+\cventry{2012}{Master informatique}{EPITECH}{}{}{}
+\cventry{2008}{Diplôme d'analyste programmeur}{EXIA}{}{}{}
+
+\section{Compétences}
+\subsection{Informatique}
+%\cvcomputer{\underline{Conception :}}{Merise, UML}{\underline{Base de données :}}{Oracle, MySQL}
+\cvcomputer{\underline{Langages :}}{C, C++, Python, Assembleur x86}{\underline{Librairies :}}{Qt, Flex, Bison}
+\cvcomputer{\underline{Systèmes :}}{ArchLinux, Debian, FreeBSD, Solaris, POK}{\underline{Réseaux :}}{Certification CISCO CCNA1 et CCNA 2}
+\cvcomputer{\underline{Outils :}}{Git, SVN, ClearCase, DOORS, Qemu, Latex}{\underline{Standards :}}{MPI, OpenMP, ARINC653}
+\subsection{Langues}
+\cvlanguage{Anglais}{lu, écrit}{Rédaction documentaire. TOEIC 800 en 2010}\\
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+\section{Détails des expériences}
+
+\cventry{INRIA}{Ingénieur d'étude}{Pariticipation au projet EZTrace, logiciel permettant la génération de trace d'exécution.}{}{}{
+  \begin{enumerate}[$\bullet$]
+    \setlength\itemsep{0px}
+  \item Stabilisation de l'existant (chaine de compilation, module MPI...)
+  \item Ajout d'un module pour la gestion du framework StarPU
+  \item Création de nouveaux outils de statistiques
+  \item Ajout d'une suite de tests et d'une plateforme d'intégration continue
+  \item Participation à des formations EZTrace
+  \end{enumerate}
+  Environnement technique: C, ASM x86, MPI, OpenMP, Git, autoconf, cmake, GCC, Linux\\
+  \smallskip
+}
+
+\cventry{ISEO}{Ingénieur d'étude}{Développement de nouveaux modules sur l'application d'ISEO. Cette application, qui a pour but la surveillance de la qualité de l'air, récupère, traite, et affiche des données en provenance d’analyseurs.}{}{}{
+  \begin{enumerate}[$\bullet$]
+    \setlength\itemsep{0px}
+  \item Création d'un module permettant la génération de fichiers de configuration de capteurs et le traitement de données renvoyées par ceux-ci via un serveur FTP.
+  \item Création d'un module permettant la récupération et la reconstruction de données d'un analyseur en cas de coupure de communication.
+  \item Création d'outils pour la gestion et la diffusion de mise à jour sur les sites clients.
+  \item Débogage des modules dédiés aux calculs, à la génération de rapports et au transfert des fichiers de configuration.
+  \end{enumerate}
+  Environnement technique: C, C++, libcurl, Oracle, Visual Studio, Visual SourceSafe, GCC, Linux, Windows\\
+  \smallskip
+}
+
+ \cventry{OpenWide Ingénierie}{R\&D}{Participation au projet de R\&D PARSEC qui à pour but la création d'outils de développement pour des systèmes critiques temps-réel distribués respectant des standard comme ARINC653}{}{}{
+   \begin{enumerate}[$\bullet$]
+     \setlength\itemsep{0px}
+   \item  Développement kernel
+   \item  Modification du kernel POK
+     \begin{enumerate}[$\bullet$]
+       \setlength\itemsep{0px}
+     \item Etude du kernel
+     \item Ajout de l’API de la norme ARINC653
+     \item Assurer les contraintes temps réel
+     \end{enumerate}
+   \item  Création d'un parseur entre le logiciel Syndex vers le langage C
+     \begin{enumerate}[$\bullet$]
+       \setlength\itemsep{0px}
+     \item Création des analyseurs lexical et syntaxique avec flex et Bison
+     \item Implémentation du parseur proprement dit en C++ via le pattern Visitor
+     \end{enumerate}
+   \item  Environnement technique : C, C++, Assembleur x86, GIT, svn, CMake, Linux, POK
+ \end{enumerate}
+ \smallskip
+ }
+
+ \cventry{General Electrics Healthcare}{Développeur C++}{Participation à l'évolution d'un logiciel de mammographie}{}{}{
+   \begin{enumerate}[$\bullet$]
+     \setlength\itemsep{0px}
+   \item  Ajout de nouvelles fonctionnalités diverses (contrôles de dosages de rayons, modification d’interface, communication entre divers modules)
+     \begin{enumerate}[$\bullet$]
+       \setlength\itemsep{0px}
+     \item Implémentation du code (beaucoup de retro-engineering)
+     \item Modification d’interfaces en TK/TCL
+     \item Rédaction des tests plans
+     \end{enumerate}
+   \item Stabilisation de l’existant
+   \item Transmission de compétences aux nouveaux arrivants
+   \item Modification de la chaine de compilation via la modification de script CSH
+   \item Environnement technique : C++, CSH, ClearCase, DOORS, svn, Solaris
+   \end{enumerate}
+   \smallskip
+ }
+
+ \cventry{Ensuite-Info}{R\&D}{Entreprise spécialisée en analyse situationnelle. Développement d'outils autour de processeurs logiciel d'analyse situationnelle afin de pouvoir faire des démonstrations aux clients}{}{}{
+   \begin{enumerate}[$\bullet$]
+     \setlength\itemsep{0px}
+   \item Définition des besoins afin de pouvoir réaliser un démonstrateur pertinant.
+   \item Développement des démonstrateurs
+     \begin{enumerate}[$\bullet$]
+       \setlength\itemsep{0px}
+     \item Alectryon : Outil de veille technologique ; le processeur qualifie des URLs en fonction d’un domaine de recherche défini par l’utilisateur et une application tierce présente les résultats triés selon un indice de pertinence attribué par le processeur.
+       \item Duquenne : Analyse de diagnostics médicaux ; le processeur est capable de détecter les singularités (mettre en évidence les traitements les mieux adaptés à une pathologie, détecter des comportements anormaux...)
+     \end{enumerate}
+   \item Réalisation de tests unitaires pour le processeur
+   \item Environnement technique : C++, Python, Qt, CMake, Git, Linux
+   \end{enumerate}
+\bigskip
+}
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
