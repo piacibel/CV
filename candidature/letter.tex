@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Wlving Lee
+% (lee.wlving@connect.um.edu.mo)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+% \includegraphics[width=0.4\textwidth]{UMiPtEng_B_WH_RGB_01.png} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	PIACIBELLO Cyrille \\
+	Appt 114, Entrée D,  234 rue de Suzon \\ % Address
+	33400 Talence \\
+	06-82-21-11-76 \\
+	cyrille.piacibello@gmail.com
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+  Service Recrutement \\
+  ARTAL Technologie \\
+  1 rue Ariane,\\
+  31500, Ramonville-Saint-Agne
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+OBJET : Lettre de motivation pour un poste de développeur C++ Spatial.
+
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+Bonjour,
+
+Je souhaite saisir l'opportunité de travailler chez ARTAL
+Technologies, notament dans la branche spatiale. Je pense que mon
+expérience dans le développement logiciel dans le context spatial au
+sein du Segment Sol de la mission Euclid ainsi que mon expérience du
+développement en C++ dans un environnement de recherche peuvent être
+valorisés au sein de votre entreprise.
+
+Dans le métier de développeur, je suis intéressé par l'aspect
+applicatif autant que l'aspect performance. 
+
+Dans le cadre de mon dernier emploi au CNRS, j'ai été amené à
+travailler dans une équipe internationale dans un environnement qui
+s'est graduellement transformé avec l'ajout de tests, d'intégration
+continue, puis de déploiement automatique notament sur des clusters de
+calcul. La base de code était en python. J'y ai appris le travail
+équipe, les contraintes en qualité de code, la validation
+automatique.
+
+À l'INRIA, j'ai travaillé dans des équipes restreintes.
+
+\bigskip % Vertical whitespace
+
+\vspace{50pt} % Vertical whitespace
+
+Cyrille PIACIBELLO
+
+\end{document}

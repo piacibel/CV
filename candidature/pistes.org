@@ -1,0 +1,11 @@
+* Offres
+| Type                            | Où                   | Entreprise        | Contact                                     | Remarque                         |
+| Developpeur C++/C               | Toulouse             | Artal Technologie | https://artal-group.com/artal/52-2/emplois/ | Candidature spontanée encouragée |
+| Developpeur C++ Réseau          | Toulouse             | Viveris           | https://www.viveris.fr/nous-rejoindre/      | Idem                             |
+| Développeur Software Temps Réel | Toulouse             | Epsilon Alcen     | https://www.epsilon-alcen.com/recrutement   | Partout                          |
+| Dévelopeur                      | Toulouse/Basso Cambo | Estella Mobility  | https://www.estellamobility.com/recrutement | Grosse campagne de recrutement   |
+|                                 |                      |                   |                                             |                                  |
+* Requetes
+APEC Toulouse C++/C : Toulouse https://www.apec.fr/candidat/recherche-emploi.html/emploi?lieux=572357&motsCles=D%C3%A9veloppeur%20C%2B%2B%2FC%20&page=0
+APEC Bordeaux C++/C : Bordeaux https://www.apec.fr/candidat/recherche-emploi.html/emploi?lieux=572920&motsCles=D%C3%A9veloppeur%20C%2B%2B%2FC%20&page=0
+

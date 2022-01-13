@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+%\moderncvtheme{banking}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.86]{geometry}
+\usepackage{enumerate}
+
+\firstname{Cyrille}
+\familyname{Piacibello}
+\title{Développeur}
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\address{234 rue de Suzon}{33400 Talence}
+\mobile{06 82 21 11 76}
+\email{cyrille.piacibello@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Expériences}
+\cventry{Avril 2017 \\ Aujourd'hui}{Ingénieur de
+  recherche}{IAP-CNRS}{Paris}{Participation au développement du
+  simulateur de l'instrument VIS de la mission spatial
+  EUCLID}{Environnement technique : Python, Linux, git}
+
+\cventry{Octobre 2015 \\ Mars 2017}{Ingénieur
+  d'étude}{INRIA}{Bordeaux}{Implémentation d'un solveur
+  itératif}{Environnement technique : C, C++, OpenMP, Linux, git}
+
+\cventry{Octobre 2013 \\ Octobre 2015}{Ingénieur
+  d'étude}{INRIA}{Bordeaux}{Participation au projet
+  ScalFMM}{Environnement technique : C, C++, MPI, OpenMP, Linux, git}
+
+\section{Compétences}
+\subsection{Informatique}
+\cvcomputer{\underline{Langages :}}{C, C++ (norme 2011)}{\underline{Standards :}}{BLAS, LAPACK, MPI, OpenMP}
+\cvcomputer{\underline{Outils :}}{Shell, \LaTeX, Git, Svn}{}{}
+
+\subsection{Langues}
+\cvlanguage{Anglais}{lu, écrit, parlé}{Rédaction documentaire. TOEIC 800 en 2012}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+
+\section{Diplômes et Études}
+\cventry{2013}{Diplôme Ingénieur}{ENSEIRB-MATMECA}{}{Bordeaux}
+        {Spécialisation P.R.C.D : Parallélisme, Régulation et Calcul Distribué}.
+\cventry{2010}{Classes Préparatoires}{Lycée Massena}{}{Nice}{}
+
+
+\newpage
+
+\section{Détails des expériences}
+\cventry{IAP-CNRS}{Ingénieur d'étude}{Participation au développement du
+  simulateur de l'instrument VIS de la mission spatial
+  EUCLID}{}{}{
+  \begin{enumerate}[$\bullet$]
+    \setlength\itemsep{0px}
+  \item Étude et developpement de nouveaux effets instrumentaux
+    (réponse impulsionnelle, lumière parasite)
+  \item Validation d'effets instrumentaux.
+  \item Contribution au Challenge Scientifique.
+  \end{enumerate}
+  Environnement technique: Python, Git, Jenkins\\
+  % \smallskip
+}
+
+\cventry{INRIA}{Ingénieur d'étude}{IB-BGMRes-DR : Implémentation d'un solveur itératif}{}{}{
+  \begin{enumerate}[$\bullet$]
+    \setlength\itemsep{0px}
+  \item Implémentation d'un GMRes (multi second membre) par bloc avec
+    produit matrice vecteur externe.
+  \item Détection et prise en compte d'Inexact Breakdown (convergence
+    partielle parmi les seconds membres).
+  \item Deflation au restart (recyclage d'information au restart).
+  \end{enumerate}
+  Environnement technique: C++, C, Git\\
+  % \smallskip
+}
+\cventry{INRIA}{Ingénieur d'étude}{Participation au projet ScalFMM, bibliothèque générique implémentant l'algorithme de Fast Multipole Method}{}{}{
+  \begin{enumerate}[$\bullet$]
+    \setlength\itemsep{0px}
+  \item Mise en place d'un ordonnancement par tâche (Standard OpenMP 4.0)
+  \end{enumerate}
+  Environnement technique: C++, C, MPI, OpenMP, Git\\
+  \smallskip
+}
+
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
