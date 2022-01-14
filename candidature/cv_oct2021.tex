@@ -10,7 +10,7 @@
 \title{Développeur}
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
-\address{234 rue de Suzon}{33400 Talence}
+\address{Résidence le Voltaire}{Appt 114, Entrée D}{234 rue de Suzon, 33400 Talence}
 \mobile{06 82 21 11 76}
 \email{cyrille.piacibello@gmail.com}
 
@@ -18,23 +18,24 @@
 \maketitle
 
 \section{Expériences}
-\cventry{Avril 2017 \\ Aujourd'hui}{Ingénieur de
-  recherche}{IAP-CNRS}{Paris}{Participation au développement du
+\cventry{Avril 2017 \\ Octobre 2021}{Ingénieur
+  d'étude}{IAP-CNRS}{Paris}{Participation au développement du
   simulateur de l'instrument VIS de la mission spatial
-  EUCLID}{Environnement technique : Python, Linux, git}
+  EUCLID}{Environnement technique : Python, Linux, git, Jenkins,
+  Redmine, SonarQube}
 
 \cventry{Octobre 2015 \\ Mars 2017}{Ingénieur
   d'étude}{INRIA}{Bordeaux}{Implémentation d'un solveur
-  itératif}{Environnement technique : C, C++, OpenMP, Linux, git}
+  itératif}{Environnement technique : C, C++, OpenMP, Linux, Git}
 
 \cventry{Octobre 2013 \\ Octobre 2015}{Ingénieur
   d'étude}{INRIA}{Bordeaux}{Participation au projet
-  ScalFMM}{Environnement technique : C, C++, MPI, OpenMP, Linux, git}
+  ScalFMM}{Environnement technique : C, C++, MPI, OpenMP, Linux, Git}
 
 \section{Compétences}
 \subsection{Informatique}
-\cvcomputer{\underline{Langages :}}{C, C++ (norme 2011)}{\underline{Standards :}}{BLAS, LAPACK, MPI, OpenMP}
-\cvcomputer{\underline{Outils :}}{Shell, \LaTeX, Git, Svn}{}{}
+\cvcomputer{\underline{Langages :}}{C, C++ (norme 2011), Python}{\underline{Standards :}}{BLAS, LAPACK, MPI, OpenMP}
+\cvcomputer{\underline{Outils :}}{Shell, \LaTeX, Git, Valgrind}{}{}
 
 \subsection{Langues}
 \cvlanguage{Anglais}{lu, écrit, parlé}{Rédaction documentaire. TOEIC 800 en 2012}
@@ -56,19 +57,20 @@
   EUCLID}{}{}{
   \begin{enumerate}[$\bullet$]
     \setlength\itemsep{0px}
-  \item Étude et developpement de nouveaux effets instrumentaux
-    (réponse impulsionnelle, lumière parasite)
-  \item Validation d'effets instrumentaux.
-  \item Contribution au Challenge Scientifique.
+  \item Simulation d'effets instrumentaux à partir de modèle et à
+    partir de mesures expérimentales réalisées sur le détecteur VIS.
+  \item Validation des effets implémentés.
+  \item Contribution au Challenge Scientifique. (Passage à l'echelle
+    du wrapper)
   \end{enumerate}
-  Environnement technique: Python, Git, Jenkins\\
+  Environnement technique: Python, Git, Jenkins, Redmine, Slurm\\
   % \smallskip
 }
 
 \cventry{INRIA}{Ingénieur d'étude}{IB-BGMRes-DR : Implémentation d'un solveur itératif}{}{}{
   \begin{enumerate}[$\bullet$]
     \setlength\itemsep{0px}
-  \item Implémentation d'un GMRes (multi second membre) par bloc avec
+  \item Implémentation d'un solveur GMRes (multi second membre) par bloc avec
     produit matrice vecteur externe.
   \item Détection et prise en compte d'Inexact Breakdown (convergence
     partielle parmi les seconds membres).
